@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/category.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Categorias</title>
+</head>
+<body>
+    <section class="section4" id="sectionCategory">
+        <h2 class="h2Titulo">Registrar Categorias</h2>
+        <ul class="ulMenu"><a href="home.html"><li>Home</li></a>
+            <a href="Boat.html"><li>Barcos</li></a>
+            <a href="Client.html"><li>Clientes</li></a>
+            <a href="Message.html"><li>Mensajes</li></a>
+            <a href="Reservation.html"><li>Reservaciones</li></a>
+            <a href="reportes.html"><li>Reportes</li></a>
+        </ul>
+        <div class="divPrincipalBoat">
+            <div class="divBoat">
+                <form>
+                    <span>Id</span>
+                    <input type="number" id="id" placeholder="  id">
+                    <span>Name</span>
+                    <input type="text" id="name" placeholder="  brand">
+                    <span>Description</span>
+                    <input type="text" id="description" placeholder="  model">
+                </form>
+                <div class="divBoatButton">
+                    <button onclick="crearCategoria()">Crear</button>
+                    <button onclick="modificarCategoria()">Actualizar</button>
+                    <button onclick="optenerCategorias()"> Consultar</button>
+                    <button onclick="traerUnaCategoria()">Traer</button>
+                </div>
+            </div>
+            <div class="divTable" >
+                <h3>Registros de Categorias</h3>
+                <div id="verTabla"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

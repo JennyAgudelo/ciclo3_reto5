@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Nanum Pen Script', cursive;
+}
+.principal{
+    height: 100vh;
+    width: 100vmax;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenido{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.contenido h1{
+    color: white;
+    font-size: 10rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.ulMenu2 li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 60px 30px;
+}
+.ulMenu2 a{
+    color: darkblue;
+    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.ulMenu2 li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: darkblue;
+    margin: auto;
+    transition: .4s;
+}
+.ulMenu2 li:hover::after{
+    width: 100%;
+}
+.ulMenu2 li:hover{
+    transform: scale(1.8);
+}
+.ulMenu{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ulMenu li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 60px 30px;
+}
+.ulMenu a{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+.ulMenu li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    transition: .4s;
+}
+.ulMenu li:hover::after{
+    width: 100%;
+}
+.ulMenu li:hover{
+    transform: scale(1.2);
+}
+.lia{
+    color: darkblue;
+    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.section1{
+    height: 100vmax;
+    width: 100%;
+    padding: 25px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section2{
+    height: 100vh;
+    width: 100vmax;
+    padding: 25px;
+    background-image:url(img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section5{
+    height: 100vh;
+    width: 100vmax;
+    padding: 25px;
+    background-image:url(img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section4{
+    height: 100vh;
+    width: 100vmax;
+    padding: 25px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section3{
+    height: 100vh;
+    width: 100vmax;
+    padding: 5px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategray;
+}
+
+thead {
+    margin-top: 35px;
+    font-weight: bold ;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse:collapse;
+    padding: 5px;
+    margin: 5px 5px 10px 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+.h2Titulo{
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.h2Titulo2{
+    color: darkblue;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.divCategoria{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+    width: auto;
+    
+
+}
+
+.divPrincipalBoat{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: auto;
+    justify-content: center;
+}
+.divBoat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 9px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    gap: 20px;
+}
+.divBoat form span{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: end;
+    align-items: center;
+    padding-right: 10px;
+}
+.divBoat form{
+    display:grid;
+    grid-template-columns: 20% 65%;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 7px;
+    row-gap: 25px;
+    column-gap: 15px;
+    width: 100%;
+}
+.divBoat form input{
+    border-radius: 12px;
+    height: 45px;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-left: 10px;
+}
+.inputCat1{
+    border-radius: 12px;
+    height: 45px;
+    width: 95%;
+    font-size: 2.5rem;
+    padding-left: 10px;
+    background-color: white;
+    margin: 5px;
+}
+.inputCat2{
+    border-radius: 12px;
+    height: 45px;
+    width: 95%;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.divBoatButton{
+    padding: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 35px;
+    margin-top: 25px;
+}
+button{
+    cursor: pointer;
+    font-family: 'Nanum Pen Script';
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-color: #f9004d;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    background-color: #f9004d;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid transparent;
+    transition: transform .4s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+.divTable{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+}
+.divTable h3{
+    color: white;
+    font-size: 5rem;
+}
+span{
+    color: white;
+    font-size: 45px;
+
+}
+select{
+    width: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+
+}
+h3{
+    font-size: 45px;
+    color: white;
+}
+.reporteFecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 15px;
+}
+.form report{
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.verRepostes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

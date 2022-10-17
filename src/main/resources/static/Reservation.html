@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/reservation.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Reservasiones</title>
+</head>
+<body onload="ejecutarBasicos()">
+    <section class="section5" id="sectionMessage">
+        <h2 class="h2Titulo2">Registrar Reservaciones</h2>
+        <ul class="ulMenu2">
+            <a class="lia" href="home.html"><li>Home</li></a>
+            <a class="lia" href="Boat.html"><li>Barcos</li></a>
+            <a class="lia" href="Category.html"><li>Categorias</li></a>
+            <a class="lia" href="Client.html"><li>Clientes</li></a>
+            <a class="lia" href="Message.html"><li>Mensajes</li></a>
+            <a class="lia" href="reportes.html"><li>Reportes</li></a>
+        </ul>
+        <div class="divPrincipalBoat">
+            <div class="divBoat">
+                <form>
+                    <span>Id</span>
+                    <input type="number" id="idReservation" placeholder="  id">
+                    <span>StartDate</span>
+                    <input type="text" id="startDate" placeholder="  brand">
+                    <span>DevolutionDate</span>
+                    <input type="text" id="devolutionDate" placeholder="  brand">
+                </form>
+                <div class="divCategoria">
+                    <span>Status</span>
+                    <select id="listStatus">
+                        <option value="">seleccione aquí</option>
+                        <option value="completed">completed</option>
+                        <option value="cancelled">cancelled</option>
+                    </select>
+                    <span>Barco</span>
+                    <select id="listBoats">
+                        <option value="">asigne barco</option>
+                    </select>
+                    <span>Cliente</span>
+                    <select id="listClients">
+                        <option value="">asigne cliente</option>
+                    </select>
+                </div>
+                <div class="divBoatButton">
+                    <button onclick="crearReservacion()">Crear</button>
+                    <button onclick="modificarReservacion()">Actualizar</button>
+                    <button onclick="optenerReservaciones()"> Consultar</button>
+                    <button onclick="traerReservacion()">Traer</button>
+                </div>
+            </div>
+            <div class="divTable" >
+                <h3>Registros de Reservaciones</h3>
+                <div id="verTabla"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

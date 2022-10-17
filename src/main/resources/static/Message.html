@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/message.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Mensajes</title>
+</head>
+<body onload="ejecutarBasicos()">
+    <section class="section3" id="sectionMessage">
+        <h2 class="h2Titulo">Registrar Mensajes</h2>
+        <ul class="ulMenu">
+            <a href="home.html"><li>Home</li></a>
+            <a href="Boat.html"><li>Barcos</li></a>
+            <a href="Category.html"><li>Categorias</li></a>
+            <a href="Client.html"><li>Clientes</li></a>
+            <a href="Reservation.html"><li>Reservaciones</li></a>
+            <a href="reportes.html"><li>Reportes</li></a>
+        </ul>
+        <div class="divPrincipalBoat">
+            <div class="divBoat">
+                <form>
+                    <span>Id</span>
+                    <input type="number" id="idMessage" placeholder="  id">
+                    <span>MessageText</span>
+                    <input type="text" id="messageText" placeholder="  brand">
+                </form>
+                <div class="divCategoria">
+                    <span>Barco</span>
+                    <select id="listBoats">
+                        <option value="">asigne barco</option>
+                    </select>
+                    <span>Cliente</span>
+                    <select id="listClients">
+                        <option value="">asigne cliente</option>
+                    </select>
+                </div>
+                <div class="divBoatButton">
+                    <button onclick="crearMensaje()">Crear</button>
+                    <button onclick="modificarMensaje()">Actualizar</button>
+                    <button onclick="optenerMensajes()"> Consultar</button>
+                    <button onclick="traerUnMensaje()">Traer</button>
+                </div>
+            </div>
+            <div class="divTable" >
+                <h3>Registros de Mensajes</h3>
+                <div id="verTabla"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
